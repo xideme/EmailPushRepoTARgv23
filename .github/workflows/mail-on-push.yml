@@ -9,7 +9,7 @@ jobs:
               server_address: stmp.gmail.com
               server_port: 587
               username: ${{secrets.MAIL_USERNAME}}
-              username: ${{secrets.MAIL_PASSWORD}}
+              password: ${{secrets.MAIL_PASSWORD}}
               subject: 'Alert, we have detected weird commits in ${{github.repository}}'
               body: |
                 Hello team,
