@@ -6,7 +6,7 @@ jobs:
         - name: Send email to this address
           uses: dawidd6/action-send-mail@v3
           with:
-              server_address: stmp.gmail.com
+              server_address: smtp.gmail.com
               server_port: 587
               username: ${{secrets.MAIL_USERNAME}}
               password: ${{secrets.MAIL_PASSWORD}}
